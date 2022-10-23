@@ -1,5 +1,7 @@
 package id.infinitelearning.kotlin_submission.exercise4
 
+import java.util.Scanner
+
 fun main() {
 
     /**
@@ -11,7 +13,10 @@ fun main() {
         "No,I mean it!",
         "HELLO WORLD!")
     var i = 0
-    while (i<4){
+    print("Kalimat yang ingin ditampilkan : ")
+    val input = Scanner(System.`in`)
+    val n : Int = input.nextInt()
+    while (i < n){
         try {
             println(greeting[i])
             i++
